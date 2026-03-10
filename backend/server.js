@@ -8,6 +8,7 @@ const connectDB = require('./config/db');
 const scheduledPublisher = require('./config/scheduler');
 
 const app = express();
+app.set('trust proxy', 1);
 
 // Connect to database
 connectDB();
