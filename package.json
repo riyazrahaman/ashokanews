@@ -1,0 +1,14 @@
+{
+  "name": "ashoka-news-app",
+  "version": "1.0.0",
+  "description": "Ashoka Women's College News Application — Full Stack Monorepo",
+  "private": true,
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "admin": "cd admin-dashboard && npm run dev",
+    "mobile": "cd mobile-app && npm start",
+    "install:all": "cd backend && npm install && cd ../admin-dashboard && npm install && cd ../mobile-app && npm install",
+    "seed": "cd backend && npm run seed"
+  },
+  "workspaces": ["backend", "admin-dashboard", "mobile-app"]
+}
