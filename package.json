@@ -9,6 +9,5 @@
     "mobile": "cd mobile-app && npm start",
     "install:all": "cd backend && npm install && cd ../admin-dashboard && npm install && cd ../mobile-app && npm install",
     "seed": "cd backend && npm run seed"
-  },
-  "workspaces": ["backend", "admin-dashboard", "mobile-app"]
+  }
 }
